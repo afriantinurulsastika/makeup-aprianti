@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Bloom | Makeup Impianmu dengan Sentuhan Pink</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container flex items-center justify-between">
+            <a href="index.html" class="logo">Glow & Bloom</a>
+
+            <ul class="nav-links flex items-center">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="shop.html">Belanja</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+
+            <div class="nav-icons flex items-center">
+                <a href="#" class="icon"><i data-lucide="search"></i></a>
+                <a href="#" class="icon"><i data-lucide="heart"></i></a>
+                <a href="cart.html" class="icon cart-icon">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="badge">0</span>
+                </a>
+                <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section (Slider) -->
+    <header class="hero">
+        <div class="slider-container">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <div class="container flex items-center justify-between">
+                    <div class="hero-content">
+                        <span
+                            style="color: var(--color-rose-gold); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; display: block;">New
+                            Collection 2024</span>
+                        <h1>Temukan Makeup Impianmu dengan <span>Sentuhan pink</span></h1>
+                        <p>Ekspresikan cantikmu dengan koleksi makeup yang aman, berkualitas, dan memberikan kesan
+                            elegan setiap hari.</p>
+                        <div class="flex" style="gap: 15px;">
+                            <a href="shop.html" class="btn btn-primary">Belanja Sekarang</a>
+                            <a href="#bestseller" class="btn btn-outline">Lihat Koleksi</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=800&auto=format&fit=crop"
+                            alt="Model Makeup Pink">
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="container flex items-center justify-between">
+                    <div class="hero-content">
+                        <span
+                            style="color: var(--color-rose-gold); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; display: block;">Best
+                            Deals</span>
+                        <h1>Cantik Elegan dengan <span>Aksen Gold</span></h1>
+                        <p>Dapatkan tampilan mewah dengan rangkaian produk eksklusif kami yang terjangkau.</p>
+                        <div class="flex" style="gap: 15px;">
+                            <a href="shop.html" class="btn btn-primary">Belanja Sekarang</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=800&auto=format&fit=crop"
+                            alt="Makeup Gold">
+                    </div>
+                </div>
+            </div>
+            <!-- Slide Controls -->
+            <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </header>
+
+    <!-- Highlight Category -->
+    <section class="categories section-padding">
+        <div class="container">
+            <h2 class="section-title text-center">Kategori Favorit</h2>
+            <div class="grid grid-cols-4 gap-md" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                <div class="category-card">
+                    <div class="cat-icon">💄</div>
+                    <h3>Lipstick</h3>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light);">Matte & Glossy</p>
+                </div>
+                <div class="category-card">
+                    <div class="cat-icon">✨</div>
+                    <h3>Eyeshadow</h3>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light);">Palette Warna-warni</p>
+                </div>
+                <div class="category-card">
+                    <div class="cat-icon">🧴</div>
+                    <h3>Foundation</h3>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light);">Full Coverage</p>
+                </div>
+                <div class="category-card">
+                    <div class="cat-icon">🎁</div>
+                    <h3>Bundle Sets</h3>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light);">Hemat & Cantik</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Seller / Promo Section -->
+    <section id="bestseller" class="bestseller section-padding" style="background-color: var(--color-bg);">
+        <div class="container">
+            <div class="flex justify-between items-center" style="margin-bottom: var(--spacing-lg);">
+                <h2 class="section-title" style="margin-bottom: 0;">Produk Terlaris</h2>
+                <a href="shop.html" style="color: var(--color-primary-dark); font-weight: 600;">Lihat Semua &rarr;</a>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?q=80&w=500&auto=format&fit=crop"
+                            alt="Lipstick">
+                        <div class="product-actions">
+                            <button class="action-btn" title="Add to Cart"><i data-lucide="shopping-cart"></i></button>
+                            <button class="action-btn" title="Wishlist"><i data-lucide="heart"></i></button>
+                            <button class="action-btn" title="Quick View"><i data-lucide="eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Lipstick</span>
+                        <h4 class="product-title"><a href="product.html">Velvet Pink Matte</a></h4>
+                        <div class="product-price">Rp 129.000</div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1515688594390-b649af70d282?q=80&w=500&auto=format&fit=crop"
+                            alt="Foundation">
+                        <div class="product-actions">
+                            <button class="action-btn"><i data-lucide="shopping-cart"></i></button>
+                            <button class="action-btn"><i data-lucide="heart"></i></button>
+                            <button class="action-btn"><i data-lucide="eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Face</span>
+                        <h4 class="product-title"><a href="product.html">Silk Foundation</a></h4>
+                        <div class="product-price">Rp 249.000</div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdd403348?q=80&w=500&auto=format&fit=crop"
+                            alt="Eyeshadow">
+                        <div class="product-actions">
+                            <button class="action-btn"><i data-lucide="shopping-cart"></i></button>
+                            <button class="action-btn"><i data-lucide="heart"></i></button>
+                            <button class="action-btn"><i data-lucide="eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Eyes</span>
+                        <h4 class="product-title"><a href="product.html">Rose Garden Palette</a></h4>
+                        <div class="product-price">Rp 189.000</div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1627384113743-6bd5a479fffd?q=80&w=500&auto=format&fit=crop"
+                            alt="Blush">
+                        <div class="product-actions">
+                            <button class="action-btn"><i data-lucide="shopping-cart"></i></button>
+                            <button class="action-btn"><i data-lucide="heart"></i></button>
+                            <button class="action-btn"><i data-lucide="eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cheek</span>
+                        <h4 class="product-title"><a href="product.html">Peachy Glow Blush</a></h4>
+                        <div class="product-price">Rp 99.000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Slice: Rekomendasi Produk Lainnya -->
+    <section class="section-padding" style="background-color: var(--color-bg-body);">
+        <div class="container">
+            <h2 class="section-title text-center">Lengkapi Koleksimu</h2>
+            <div class="product-grid">
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=500&auto=format&fit=crop"
+                            alt="Powder">
+                        <div class="product-actions">
+                            <button class="action-btn"><i data-lucide="shopping-cart"></i></button>
+                            <button class="action-btn"><i data-lucide="heart"></i></button>
+                            <button class="action-btn"><i data-lucide="eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Face</span>
+                        <h4 class="product-title"><a href="product.html">Luminous Setting Powder</a></h4>
+                        <div class="product-price">Rp 159.000</div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=500&auto=format&fit=crop"
+                            alt="Liquid Blush">
+                        <div class="product-actions">
+                            <button class="action-btn"><i data-lucide="shopping-cart"></i></button>
+                            <button class="action-btn"><i data-lucide="heart"></i></button>
+                            <button class="action-btn"><i data-lucide="eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cheek</span>
+                        <h4 class="product-title"><a href="product.html">Liquid Blush Rose</a></h4>
+                        <div class="product-price">Rp 109.000</div>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1571781535607-43209ce8bb3b?q=80&w=500&auto=format&fit=crop"
+                            alt="Serum">
+                        <div class="product-actions">
+                            <button class="action-btn"><i data-lucide="shopping-cart"></i></button>
+                            <button class="action-btn"><i data-lucide="heart"></i></button>
+                            <button class="action-btn"><i data-lucide="eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Skin</span>
+                        <h4 class="product-title"><a href="product.html">Glow Serum</a></h4>
+                        <div class="product-price">Rp 199.000</div>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=500&auto=format&fit=crop"
+                            alt="Lipstick Red">
+                        <div class="product-actions">
+                            <button class="action-btn"><i data-lucide="shopping-cart"></i></button>
+                            <button class="action-btn"><i data-lucide="heart"></i></button>
+                            <button class="action-btn"><i data-lucide="eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Lips</span>
+                        <h4 class="product-title"><a href="product.html">Classic Red Matte</a></h4>
+                        <div class="product-price">Rp 115.000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title text-center">Kata Mereka</h2>
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Suka banget sama warnanya! Soft pink-nya pas banget di kulit aku.
+                            Packagingnya juga super gemes!"</p>
+                        <div class="flex flex-col items-center">
+                            <!-- Simplified Avatar -->
+                            <div
+                                style="width: 50px; height: 50px; background: #FFC1CC; border-radius: 50%; display:flex; align-items:center; justify-content:center; margin-bottom: 10px; font-weight:bold; color: white;">
+                                SA</div>
+                            <div class="user-name">Sarah A.</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Pengiriman cepat dan barang original. Foundationnya ringan banget dipake
+                            seharian."</p>
+                        <div class="flex flex-col items-center">
+                            <div
+                                style="width: 50px; height: 50px; background: #D48C9E; border-radius: 50%; display:flex; align-items:center; justify-content:center; margin-bottom: 10px; font-weight:bold; color: white;">
+                                DR</div>
+                            <div class="user-name">Dina R.</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Bundle set-nya worth it banget buat hadiah. Temenku suka banget!
+                            Recommended
+                            seller."</p>
+                        <div class="flex flex-col items-center">
+                            <div
+                                style="width: 50px; height: 50px; background: #B76E79; border-radius: 50%; display:flex; align-items:center; justify-content:center; margin-bottom: 10px; font-weight:bold; color: white;">
+                                PL</div>
+                            <div class="user-name">Putri L.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="section-padding text-center"
+            style="background-color: var(--color-primary); color: var(--color-text);">
+            <div class="container">
+                <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">Join the Glow Club ✨</h2>
+                <p style="margin-bottom: 2rem;">Dapatkan tips makeup terbaru dan diskon eksklusif 10% untuk pembelian
+                    pertamamu!</p>
+                <form style="max-width: 500px; margin: 0 auto; display: flex; gap: 10px;">
+                    <input type="email" placeholder="Masukkan email kamu..."
+                        style="flex: 1; padding: 12px 20px; border-radius: var(--radius-full); border: none;">
+                    <button type="button" class="btn"
+                        style="background: white; color: var(--color-primary); font-weight: bold;">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <a href="#" class="logo" style="font-size: 1.5rem;">Glow & Bloom</a>
+                        <p style="margin-top: 1rem; color: var(--color-text-light);">Menemani perempuan tampil percaya
+                            diri
+                            dengan makeup yang aman, halal, dan terjangkau.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-btn"><i data-lucide="instagram"></i></a>
+                            <a href="#" class="social-btn"><i data-lucide="facebook"></i></a>
+                            <a href="#" class="social-btn"><i data-lucide="twitter"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Belanja</h4>
+                        <ul>
+                            <li><a href="#">Semua Produk</a></li>
+                            <li><a href="#">Mata</a></li>
+                            <li><a href="#">Bibir</a></li>
+                            <li><a href="#">Wajah</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Bantuan</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Pengiriman</a></li>
+                            <li><a href="#">Retur & Garansi</a></li>
+                            <li><a href="#">Konfirmasi Pembayaran</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Kontak</h4>
+                        <ul>
+                            <li><i data-lucide="mail" style="width:16px; display:inline;"></i> hello@glowbloom.com</li>
+                            <li><i data-lucide="instagram" style="width:16px; display:inline;"></i> @glowbloom</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center"
+                    style="border-top: 1px solid var(--color-border); padding-top: 2rem; color: var(--color-text-light);">
+                    <p>&copy; 2024 Glow & Bloom. Created with love & sparkle ✨.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+        <script>
+            lucide.createIcons();
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belanja | Glow & Bloom</title>
+
+    <!-- Fonts & Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar (Same as Index) -->
+    <nav class="navbar">
+        <div class="container flex items-center justify-between">
+            <a href="index.html" class="logo">Glow & Bloom</a>
+            <ul class="nav-links flex items-center">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="shop.html" class="active">Belanja</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+            <div class="nav-icons flex items-center">
+                <a href="#" class="icon"><i data-lucide="search"></i></a>
+                <a href="#" class="icon"><i data-lucide="heart"></i></a>
+                <a href="#" class="icon cart-icon">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="badge">2</span>
+                </a>
+                <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Breadcrumb -->
+    <section class="page-header" style="background-color: var(--color-bg); padding: 3rem 0; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 2.5rem; color: var(--color-secondary);">Semua Produk</h1>
+            <div class="breadcrumb">Beranda / Belanja</div>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Sidebar Filters -->
+                <aside class="filter-sidebar">
+                    <div class="filter-group">
+                        <h3 class="filter-title">Kategori</h3>
+                        <ul class="filter-list">
+                            <li><span>Semua</span> <span>(24)</span></li>
+                            <li><span>Lipstick</span> <span>(8)</span></li>
+                            <li><span>Eyeshadow</span> <span>(5)</span></li>
+                            <li><span>Blush On</span> <span>(4)</span></li>
+                            <li><span>Foundation</span> <span>(7)</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3 class="filter-title">Harga</h3>
+                        <div class="price-range" style="padding: 10px 0;">
+                            <input type="range" class="w-full" min="50000" max="500000">
+                            <div class="flex justify-between"
+                                style="font-size: 0.8rem; margin-top: 5px; color: var(--color-text-light);">
+                                <span>Rp 50.000</span>
+                                <span>Rp 500.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3 class="filter-title">Warna</h3>
+                        <div class="color-options">
+                            <div class="color-swatch active" style="background-color: #D48C9E;" data-color="pink"></div>
+                            <div class="color-swatch" style="background-color: #E74C3C;" data-color="red"></div>
+                            <div class="color-swatch" style="background-color: #F1C40F;" data-color="gold"></div>
+                            <div class="color-swatch" style="background-color: #8E44AD;" data-color="purple"></div>
+                            <div class="color-swatch" style="background-color: #D35400;" data-color="orange"></div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Product Grid -->
+                <main>
+                    <div class="flex justify-between items-center" style="margin-bottom: 2rem;">
+                        <span style="color: var(--color-text-light);">Menampilkan 1-9 dari 24 produk</span>
+                        <select
+                            style="padding: 8px; border: 1px solid var(--color-border); border-radius: var(--radius-sm);">
+                            <option>Urutkan: Popularitas</option>
+                            <option>Harga: Rendah ke Tinggi</option>
+                            <option>Harga: Tinggi ke Rendah</option>
+                            <option>Terbaru</option>
+                        </select>
+                    </div>
+
+                    <div class="product-grid">
+                        <!-- Items (Repeating structure from Index but more items) -->
+                        <div class="product-card" data-category="lips" data-price="89000" data-color="pink">
+                            <div class="product-image">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=500&auto=format&fit=crop"
+                                        alt="Product">
+                                </a>
+                                <div class="product-actions">
+                                    <button class="action-btn"><i data-lucide="shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">Lips</span>
+                                <h4 class="product-title"><a href="product.html">Glossy Pink Balm</a></h4>
+                                <div class="product-price">Rp 89.000</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="face" data-price="159000" data-color="white">
+                            <div class="product-image">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=500&auto=format&fit=crop"
+                                        alt="Product">
+                                </a>
+                                <div class="product-actions">
+                                    <button class="action-btn"><i data-lucide="shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">Face</span>
+                                <h4 class="product-title"><a href="product.html">Luminous Powder</a></h4>
+                                <div class="product-price">Rp 159.000</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="eyes" data-price="210000" data-color="multi">
+                            <div class="product-image">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdd403348?q=80&w=500&auto=format&fit=crop"
+                                        alt="Product">
+                                </a>
+                                <div class="product-actions">
+                                    <button class="action-btn"><i data-lucide="shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">Eyes</span>
+                                <h4 class="product-title"><a href="product.html">Summer Palette</a></h4>
+                                <div class="product-price">Rp 210.000</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="cheeks" data-price="109000" data-color="pink">
+                            <div class="product-image">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=500&auto=format&fit=crop"
+                                        alt="Product">
+                                </a>
+                                <div class="product-actions">
+                                    <button class="action-btn"><i data-lucide="shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">Cheeks</span>
+                                <h4 class="product-title"><a href="product.html">Rosy Drops</a></h4>
+                                <div class="product-price">Rp 109.000</div>
+                            </div>
+                        </div>
+
+                        <!-- Duplicate for layout demo -->
+                        <div class="product-card" data-category="skin" data-price="199000" data-color="clear">
+                            <div class="product-image">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1571781535607-43209ce8bb3b?q=80&w=500&auto=format&fit=crop"
+                                        alt="Product">
+                                </a>
+                                <div class="product-actions">
+                                    <button class="action-btn"><i data-lucide="shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">Skin</span>
+                                <h4 class="product-title"><a href="product.html">Glow Serum</a></h4>
+                                <div class="product-price">Rp 199.000</div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="lips" data-price="115000" data-color="red">
+                            <div class="product-image">
+                                <a href="product.html">
+                                    <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=500&auto=format&fit=crop"
+                                        alt="Product">
+                                </a>
+                                <div class="product-actions">
+                                    <button class="action-btn"><i data-lucide="shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">Lips</span>
+                                <h4 class="product-title"><a href="product.html">Classic Red</a></h4>
+                                <div class="product-price">Rp 115.000</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="flex justify-center" style="margin-top: 3rem; gap: 10px;">
+                        <button class="btn btn-outline" style="padding: 10px 15px;">&laquo;</button>
+                        <button class="btn btn-primary" style="padding: 10px 15px;">1</button>
+                        <button class="btn btn-outline" style="padding: 10px 15px;">2</button>
+                        <button class="btn btn-outline" style="padding: 10px 15px;">3</button>
+                        <button class="btn btn-outline" style="padding: 10px 15px;">&raquo;</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 Glow & Bloom. Created with love & sparkle ✨.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

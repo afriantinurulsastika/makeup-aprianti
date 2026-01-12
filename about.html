@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami | Glow & Bloom</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container flex items-center justify-between">
+            <a href="index.html" class="logo">Glow & Bloom</a>
+            <ul class="nav-links flex">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="shop.html">Belanja</a></li>
+                <li><a href="about.html" class="active">Tentang Kami</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div class="nav-icons flex items-center">
+                <a href="#" class="icon cart-icon">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="badge">0</span>
+                </a>
+                <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="page-header" style="background-color: var(--color-bg); padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3rem; color: var(--color-secondary); margin-bottom: 1rem;">Cerita Kami</h1>
+            <p style="max-width: 600px; margin: 0 auto; color: var(--color-text-light);">Mengenal lebih dekat Glow &
+                Bloom, sahabat setia kecantikanmu.</p>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="flex items-center" style="gap: 4rem;">
+                <div style="flex: 1;">
+                    <img src="https://images.unsplash.com/photo-1522335789203-abd652322ed8?q=80&w=800&auto=format&fit=crop"
+                        alt="Our Story" style="border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                </div>
+                <div style="flex: 1;">
+                    <h2 class="section-title">Visi & Misi</h2>
+                    <p style="margin-bottom: 1.5rem; color: var(--color-text-light);">
+                        Berawal dari keinginan untuk menyediakan produk kecantikan yang tidak hanya cantik dilihat
+                        tetapi juga aman digunakan, Glow & Bloom lahir pada tahun 2023. Kami percaya bahwa setiap
+                        perempuan berhak tampil percaya diri tanpa harus mengorbankan kesehatan kulit atau dompet
+                        mereka.
+                    </p>
+                    <p style="margin-bottom: 2rem; color: var(--color-text-light);">
+                        <b>Misi Kami:</b> "Menemani perempuan tampil percaya diri dengan makeup yang aman, berkualitas,
+                        dan terjangkau."
+                    </p>
+                    <a href="shop.html" class="btn btn-primary">Lihat Produk Kami</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="section-padding" style="background-color: #FFF9FA;">
+        <div class="container text-center">
+            <h2 class="section-title">Kenapa Memilih Kami?</h2>
+            <div class="grid grid-cols-4 gap-md" style="margin-top: 2rem;">
+                <div
+                    style="padding: 2rem; background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🐰</div>
+                    <h3>Cruelty Free</h3>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light);">Tidak diuji pada hewan.</p>
+                </div>
+                <div
+                    style="padding: 2rem; background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🌿</div>
+                    <h3>Bahan Alami</h3>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light);">Mengandung ekstrak tumbuhan.</p>
+                </div>
+                <div
+                    style="padding: 2rem; background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">💸</div>
+                    <h3>Terjangkau</h3>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light);">Harga bersahabat untuk semua.</p>
+                </div>
+                <div
+                    style="padding: 2rem; background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">💖</div>
+                    <h3>Halal</h3>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light);">Tersertifikasi halal MUI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team (Optional) -->
+    <section class="section-padding">
+        <div class="container text-center">
+            <h2 class="section-title">Meet the Team</h2>
+            <div class="flex justify-center" style="gap: 2rem; flex-wrap: wrap;">
+                <div style="width: 200px;">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg"
+                        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--color-primary); margin: 0 auto 1rem;">
+                    <h4 style="margin-bottom: 0.2rem;">Amanda</h4>
+                    <p style="font-size: 0.8rem; color: var(--color-text-light);">Founder & CEO</p>
+                </div>
+                <div style="width: 200px;">
+                    <img src="https://randomuser.me/api/portraits/women/42.jpg"
+                        style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--color-primary); margin: 0 auto 1rem;">
+                    <h4 style="margin-bottom: 0.2rem;">Bella</h4>
+                    <p style="font-size: 0.8rem; color: var(--color-text-light);">Creative Director</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 Glow & Bloom. Created with love & sparkle ✨.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

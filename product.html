@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Pink Matte | Glow & Bloom</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container flex items-center justify-between">
+            <a href="index.html" class="logo">Glow & Bloom</a>
+            <ul class="nav-links flex">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="shop.html" class="active">Belanja</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+            </ul>
+            <div class="nav-icons flex items-center">
+                <a href="#" class="icon cart-icon">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="badge">1</span>
+                </a>
+                <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="padding: 2rem 1rem;">
+        <div class="breadcrumb" style="margin-bottom: 2rem;">Beranda / Belanja / Bibir / Velvet Pink Matte</div>
+
+        <div class="product-detail-container">
+            <!-- Left: Gallery -->
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img id="mainImg"
+                        src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?q=80&w=800&auto=format&fit=crop"
+                        alt="Product Main">
+                </div>
+                <div class="gallery-thumbs">
+                    <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?q=80&w=200"
+                        class="thumb active" onclick="changeImage(this)">
+                    <img src="https://images.unsplash.com/photo-1625093742435-09869634d836?q=80&w=200" class="thumb"
+                        onclick="changeImage(this)">
+                    <img src="https://images.unsplash.com/photo-1591360236480-94347f4af931?q=80&w=200" class="thumb"
+                        onclick="changeImage(this)">
+                </div>
+            </div>
+
+            <!-- Right: Info -->
+            <div class="product-info-detail">
+                <span class="product-category" style="color: var(--color-primary-dark);">BEST SELLER</span>
+                <h1>Velvet Pink Matte Lipstick</h1>
+                <div class="flex items-center" style="margin-bottom: 1rem; gap: 10px;">
+                    <div class="stars" style="color: var(--color-gold);">★★★★★</div>
+                    <span style="color: var(--color-text-light);">(128 Ulasan)</span>
+                </div>
+                <span class="price-tag">Rp 129.000</span>
+
+                <p style="margin-bottom: 2rem; color: var(--color-text-light);">
+                    Lipstick matte dengan formula ringan yang tidak membuat bibir kering. Mengandung Vitamin E dan Argan
+                    Oil untuk menjaga kelembapan bibir sepanjang hari. Tahan hingga 12 jam!
+                </p>
+
+                <div class="variant-selector">
+                    <h4 style="margin-bottom: 0.5rem;">Pilih Warna:</h4>
+                    <div class="color-options">
+                        <div class="color-swatch active" style="background-color: #D48C9E;" title="Dusty Rose"></div>
+                        <div class="color-swatch" style="background-color: #C0392B;" title="Bold Red"></div>
+                        <div class="color-swatch" style="background-color: #E67E22;" title="Coral"></div>
+                    </div>
+                </div>
+
+                <div class="flex items-center" style="gap: 1rem; margin-bottom: 2rem;">
+                    <div class="quantity-selector">
+                        <button class="qty-btn">-</button>
+                        <input type="text" value="1" class="qty-input">
+                        <button class="qty-btn">+</button>
+                    </div>
+                    <button class="btn btn-primary" style="flex: 1;">Tambah ke Keranjang</button>
+                    <button class="btn btn-outline" style="padding: 12px;"><i data-lucide="heart"></i></button>
+                </div>
+
+                <div
+                    style="border-top: 1px solid var(--color-border); padding-top: 1rem; font-size: 0.9rem; color: var(--color-text-light);">
+                    <p>✅ Stok Tersedia</p>
+                    <p>🚛 Pengiriman dari Jakarta</p>
+                    <p>🛡️ Jaminan 100% Original</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Description Tabs -->
+        <section class="section-padding" style="margin-top: 2rem;">
+            <div style="border-bottom: 2px solid var(--color-border); margin-bottom: 2rem;">
+                <button
+                    style="padding: 10px 20px; border-bottom: 3px solid var(--color-primary); font-weight: 600;">Deskripsi</button>
+                <button style="padding: 10px 20px; color: var(--color-text-light);">Bahan Kandungan</button>
+                <button style="padding: 10px 20px; color: var(--color-text-light);">Cara Pakai</button>
+            </div>
+            <div class="tab-content">
+                <p style="margin-bottom: 1rem;">
+                    Velvet Pink Matte adalah lipstick revolusioner yang menggabungkan hasil akhir matte yang elegan
+                    dengan kenyamanan lip balm. Diformulasikan khusus untuk wanita aktif yang ingin tampil cantik tanpa
+                    repot touch-up berkali-kali.
+                </p>
+                <ul style="list-style: disc; margin-left: 1.5rem; color: var(--color-text-light);">
+                    <li>Pigmentasi tinggi dalam sekali ulas</li>
+                    <li>Transfer-proof dan masker-proof</li>
+                    <li>Tekstur creamy yang mudah diratakan</li>
+                    <li>Aroma vanila yang lembut</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Related Products -->
+        <section class="section-padding">
+            <h3 class="section-title">Produk Serupa</h3>
+            <div class="product-grid" style="grid-template-columns: repeat(4, 1fr);">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1591360236480-94347f4af931?q=80&w=500" alt="Prod">
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Creamy Lip Stain</h4>
+                        <div class="product-price">Rp 85.000</div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1625093742435-09869634d836?q=80&w=500" alt="Prod">
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Lip Gloss Clear</h4>
+                        <div class="product-price">Rp 55.000</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 Glow & Bloom. Created with love & sparkle ✨.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+        function changeImage(el) {
+            document.querySelector('#mainImg').src = el.src.replace('&w=200', '&w=800');
+            document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+            el.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
